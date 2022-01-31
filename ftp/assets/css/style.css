@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+         local('MaterialIcons-Regular'),
+         url(material-icons.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Open Sans Regular';
+    font-size: normal;
+    font-weight: 400;
+    src: local('Open Sans'),
+         local('OpenSans-Regular'),
+         url(OpenSans-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Open Sans Regular" !important;
+}
+
+main {
+    font-family: "Open Sans Regular" !important;
+    flex: 1 0 auto;
+}
+
+.nav-wrapper {
+    padding: 0 2em;
+}
+
+#ftp-form-container {
+    margin: 10px 0;
+}
+
+.info-container {
+    margin: 4px;
+}
+
+#info-text {
+    font-size: 24px;
+    padding: 8px 0;
+    border-radius: 10px;
+}
+
+.loader {
+    width: 50%;
+}
+
+.danger-alert {
+    width: 100%;
+    color: #fff !important;
+    background-color: #ef5350 !important;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.danger-alert:hover {
+    background-color: #f44336 !important;
+}
+
+.success-alert {
+    width: 100%;
+    color: #fff !important;
+    background-color: #66bb6a !important;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.success-alert:hover {
+    background-color: #4caf50 !important;
+}
+
+.directory {
+    transition: all 0.3s ease;
+}
+
+.directory:hover {
+    background-color: #e0e0e0 !important;
+}
+
+.icon-list {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.directory:hover .icon-list {
+    opacity: 1;
+}
+
+.dir-name {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.icon-list > i {
+    margin-left: 6px;
+}
+
+.rename-icon {
+    color: orange !important;
+}
+
+.delete-icon {
+    color: red !important;
+}
+
+.download-icon {
+    color: green !important;
+}
+
+#overlay {
+    display: block;
+    position: fixed !important;
+    height: 100% !important;
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    z-index: 999;
+}
+
+#loader {
+    display: block;
+    z-index: 9999;
+}
+
+#loader > div.preloader-wrapper {
+    position: fixed !important;
+    margin: auto !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+}
+
+#rename-modal, #new-folder-modal, #upload-file-modal {
+    width: fit-content;
+}
+
+#op-fab > i {
+    transform: rotate(0deg);
+    transition: transform 0.4s ease;
+}
+
+#op-fab:hover i {
+    transform: rotate(45deg);
+}
+
+footer {
+    margin-top: 20px;
+}
